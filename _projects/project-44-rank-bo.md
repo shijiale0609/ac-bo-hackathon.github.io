@@ -10,8 +10,8 @@ contributors:
   - Samantha Corapi (University of Toronto) @samanthacorapi
   - Stanley Lo (University of Toronto) @stanlo229
 
-# github: AC-BO-Hackathon/<your-repo-name>
-# youtube_video: <your-video-id>
+github: gkwt/rank-bo
+youtube_video: c84Sd2IwMAQ
 
 ---
 
