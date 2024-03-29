@@ -11,7 +11,7 @@ contributors:
   - Michail Mitsakis (DTU) @lordmikerahl
   
 github: AC-BO-Hackathon/project-surface-science-syndicate
-<!-- youtube_video: <your-video-id> -->
+youtube_video: kIRxGdwmLSY
 ---
 
 This project will focus on exploring the capabilities of Bayesian optimization, specifically employing BayBE, in the discovery of novel corrosion inhibitors for materials design. Initially, we will work with a randomly chosen subset from a comprehensive database of electrochemical responses of small organic molecules. Our goal is to assess how Bayesian optimization can speed up the screening process across the design space to identify promising compounds. We will compare different strategies for incorporating alloy information, while optimizing the experimental parameters with respect to the inhibitive performance of the screened compounds.
