@@ -3,17 +3,17 @@ number: 32 # leave as-is, maintainers will adjust
 title: Efficient Protein Mutagenisis using Bayesian Optimization
 topic: real-world
 team_leads:
- - Benjamin Weiser (McGill University)
+- Benjamin Weiser (McGill University)
+- Jérôme Genzling (McGill University)
+- Nicolas Gastellu (McGill University)
+- Sylvester Zhang (McGill University)
 
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
-contributors:
-  - Jérôme Genzling
-  - Nicolas Gastellu
-  - Tao Liu
-  - Sylvester Zg
+#contributors:
+ 
 
-# github: AC-BO-Hackathon/<your-repo-name>
-# youtube_video: <your-video-id>
+# github: AC-BO-Hackathon/project-AiChemMcGill 
+# youtube_video: fxpDX7Wmdc0
 
 ---
 
@@ -22,3 +22,7 @@ This project focuses on developing a Bayesian optimization workflow for protein 
 References:
 
 1. Rube, H.T., Rastogi, C., Feng, S. et al. Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning. Nat Biotechnol 40, 1520–1527 (2022). https://doi.org/10.1038/s41587-022-01307-0
+2. Blanchard, Andrew E., et al. "Language models for the prediction of SARS-CoV-2 inhibitors." The International Journal of High Performance Computing Applications 36.5-6 (2022): 587-602.
+3. Matthew J Bick, Per J Greisen, Kevin J Morey, Mauricio S Antunes, David La, Banumathi Sankaran, Luc Reymond, Kai Johnsson, June I Medford, David Baker (2017) Computational design of environmental sensors for the potent opioid fentanyl eLife 6:e28909
+
+    
