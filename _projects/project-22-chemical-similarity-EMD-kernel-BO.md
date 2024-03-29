@@ -4,10 +4,10 @@ title: Chemical Similarity-Informed Earth Mover’s Distance Kernel Bayesian Opt
 topic: real-world
 
 team_leads:
-  - Jiale Shi (<a href=https://github.com/shijiale0609> shijiale0609 </a>) (Massachusetts Institute of Technology)
-  - [Dandan Tang](https://github.com/DandanTang0) (University of Virginia)
-  - [Qianxiang Ai](https://github.com/qai222) (Massachusetts Institute of Technology)
-  - [Christoph Griehl](https://github.com/dionyce) (Max Planck Institute for Dynamics of Complex Technical Systems)
+  - Jiale Shi (Massachusetts Institute of Technology)
+  - Dandan Tang (https://github.com/DandanTang0) (University of Virginia)
+  - Qianxiang Ai (https://github.com/qai222) (Massachusetts Institute of Technology)
+  - Christoph Griehl (https://github.com/dionyce) (Max Planck Institute for Dynamics of Complex Technical Systems)
     
 #contributors:
 
