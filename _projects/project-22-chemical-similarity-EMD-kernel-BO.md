@@ -1,6 +1,6 @@
 ---
 number: 22 # leave as-is, maintainers will adjust
-title: Chemical Similarity-Informed Earth Mover’s Distance Kernel Bayesian Optimization for Predicting the Properties of Molecules and Molecular Mixtures
+title: Chemical Similarity-Informed Earth Mover’s Distance Kernel Bayesian Optimization for Predicting the Properties of Molecules and Molecular Mixtures
 topic: real-world
 
 team_leads:
