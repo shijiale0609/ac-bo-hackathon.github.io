@@ -12,8 +12,8 @@ team_leads:
 #contributors:
  
 
-# github: AC-BO-Hackathon/project-AiChemMcGill 
-# youtube_video: fxpDX7Wmdc0
+github: AC-BO-Hackathon/project-AiChemMcGill 
+youtube_video: fxpDX7Wmdc0
 
 ---
 
