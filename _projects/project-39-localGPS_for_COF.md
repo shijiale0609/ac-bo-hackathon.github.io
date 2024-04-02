@@ -7,12 +7,12 @@ team_leads:
     
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 contributors:
-  - Nikhil Thota (Johns Hopkins University)
+  - Nikhil Thota (Johns Hopkins University) (@T-NIKHIL)
   - Yiran (Gigi) Wang (Johns Hopkins University)
   - Jarett Ren (Johns Hopkins University)
 
-# github: AC-BO-Hackathon/<your-repo-name>
-# youtube_video: <your-video-id>
+# github: AC-BO-Hackathon/project-localGPs_for_COF
+# youtube_video: https://youtu.be/iog-07Ekp9g
 
 ---
 
