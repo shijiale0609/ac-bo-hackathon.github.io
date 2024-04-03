@@ -3,10 +3,10 @@ number: 32 # leave as-is, maintainers will adjust
 title: Efficient Protein Mutagenisis using Bayesian Optimization
 topic: real-world
 team_leads:
-- Benjamin Weiser (McGill University)
-- Jérôme Genzling (McGill University)
-- Nicolas Gastellu (McGill University)
-- Sylvester Zhang (McGill University)
+- Benjamin Weiser (McGill University) @BenjaminWeiser
+- Jérôme Genzling (McGill University) @JGenzling
+- Nicolas Gastellu (McGill University) @ngastellu
+- Sylvester Zhang (McGill University) @sylvester-zhang
 
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 #contributors:
