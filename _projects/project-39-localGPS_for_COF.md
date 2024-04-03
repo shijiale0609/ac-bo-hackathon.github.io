@@ -3,16 +3,16 @@ number: 39 # leave as-is, maintainers will adjust
 title: Divide and Conquer - Local Gaussian Processes to design Covalent Organic Frameworks for Methane Deliverable Capacity
 topic: real-world
 team_leads:
-  - Nikhil Thota (Johns Hopkins University) (https://github.com/T-NIKHIL)
+  - Nikhil Thota (Johns Hopkins University) @T-NIKHIL
     
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 contributors:
-  - Maitreyee Sharma Priyadarshini (Johns Hopkins University) (https://github.com/msharmap)
-  - Yiran (Gigi) Wang (Johns Hopkins University) (https://github.com/gigiwang08)
-  - Jarett Ren (Johns Hopkins University) (https://github.com/jren0)
+  - Maitreyee Sharma Priyadarshini (Johns Hopkins University) @msharmap
+  - Yiran (Gigi) Wang (Johns Hopkins University) @gigiwang08
+  - Jarett Ren (Johns Hopkins University) @jren0
 
-# github: AC-BO-Hackathon/project-localGPs_for_COF
-# youtube_video: https://youtu.be/iog-07Ekp9g
+github: AC-BO-Hackathon/project-localGPs_for_COF
+youtube_video: iog-07Ekp9g
 
 ---
 
