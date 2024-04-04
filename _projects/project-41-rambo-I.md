@@ -3,12 +3,12 @@ number: 41 # leave as-is, maintainers will adjust
 title: RAMBO I - Retrieval augmented initialization for Bayesian optimization strategy
 topic: general
 team_leads:
-  - Bojana Ranković (EPFL)
-  - Andres M. Bran (EPFL)
-  - Magdalena Lederbauer (EPFL)
-  - Anna Borisova (EPFL)
-  - Geemi Wellawatte (EPFL)
-  - Philippe Schwaller (EPFL)
+  - Bojana Ranković (EPFL) @bojana-rankovic
+  - Andres M. Bran (EPFL) @doncamilom
+  - Magdalena Lederbauer (EPFL) @mlederbauer
+  - Anna Borisova (EPFL) @AnnaKelmanson
+  - Geemi Wellawatte (EPFL) @geemi725
+  - Philippe Schwaller (EPFL) @pschwllr
 
 
 github: schwallergroup/rambo-I
