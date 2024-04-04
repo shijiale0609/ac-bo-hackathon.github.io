@@ -116,7 +116,7 @@ The project templates are anticipated for release during mid-March. Once these a
 1. Accept the GitHub Classroom invitation to a topic above (see also [resources](_/../resources.md))
 2. Create a new team in the GitHub Classroom interface
 3. Have your team members click on the same GitHub Classroom invitation link that you used and join the team you created.
-4. Open a new pull request to modify your project file. Replace `<your-repo-name>` with the GitHub repository name that was created by GitHub Classroom for you using the corresponding project template link. For example, if your team name is "Bayes Bandits" and the template is called "benchmarking", the repository will be named `benchmarking-bayes-bandits`, and the `github` field should be `AC-BO-Hackathon/benchmarking-bayes-bandits`. You will also need to uncomment the line. For example:
+4. Open a new pull request to modify your project file. Replace `<your-repo-name>` with the GitHub repository name that was created by GitHub Classroom for you using the corresponding project template link. For example, if your team name is "Bayes Bandits" and the template is called "benchmarking", the repository will be named `benchmarking-bayes-bandits`, and the `github` field should be `AC-BO-Hackathon/project-X-bayes-bandits`. You are also welcome to use your own repository hosted somewhere else on GitHub (e.g., `sgbaird/honegumi`) You will also need to uncomment the line by removing the `#`. For example:
 
 ```markdown
 # github: AC-BO-Hackathon/<your-repo-name>
@@ -131,17 +131,19 @@ If the submission instructions from above are daunting, you are welcome to submi
 
 ## Project showcase and judging
 
-The closing session on {{ site.event_close_date }} is for sharing with peers and judges and getting feedback while everyone is still around on the Gather Town event space. This will also conclude the synchronous portion of the hackathon. Participants will prepare a poster image, a link to a video, or an embedded website to be showcased in either Poster Room A or Poster Room B from the Gather Town space (see [agenda](_/../agenda.md)). One of these objects will be placed into an interactive "poster" object for your project by an organizer. The item (image or link) should be supplied to the organizers 15 min prior to the showcase by posting in the slack channel or DM'ing Sterling Baird. See the [FAQ][faq]{:title="How do I prepare for the project showcase?"} for more info.
+The closing session on {{ site.event_close_date }} is for sharing with peers and judges and getting feedback while everyone is still around on the Gather Town event space. This will also conclude the synchronous portion of the hackathon. Participants will prepare a poster image, a link to a video, or an embedded website to be showcased in Poster Room A from the Gather Town space (see [agenda](_/../agenda.md)). One of these objects will be placed into an interactive "poster" object for your project by an organizer. The item (image or link) should be supplied to the organizers 15 min prior to the showcase by posting in the slack channel or DM'ing Sterling Baird. See the [FAQ][faq]{:title="How do I prepare for the project showcase?"} for more info.
 
 ## End of hackathon
 
-To ensure a dynamic and engaging submission process, we ask that all hackathon teams submit their final projects through social media (e.g., Twitter, LinkedIn, YouTube) and then link to this in their project file. By sharing your work with a broader audience, you’ll help to promote groundbreaking research in materials science and chemistry while inspiring others to contribute to the field.
+To ensure a dynamic and engaging submission process, we ask that all hackathon teams submit their final projects through social media (e.g., Twitter, LinkedIn, YouTube) and then link to this in their project file. By sharing your work with a broader audience, you’ll help to promote groundbreaking research in materials science and chemistry while inspiring others to contribute to the field. This step is also a requirement for teams wishing to contribute to the scholarly article.[<sup>(?)</sup>][faq]{:title="What is required for me to participate in the scholarly article?"}
 
 Here are the guidelines for submitting your project:
 
 1. Create a concise video presentation (2 minutes or less) summarizing your team’s project, highlighting its applications in materials science and chemistry, and showcasing your project outputs.
 
-2. Post your video to YouTube (unlisted is fine) and submit a pull request to update your project file with the YouTube video ID (e.g., `IVaWl2tL06c` for `https://youtu.be/IVaWl2tL06c`). For example, you would replace the following two lines:
+2. Upload your video to YouTube (unlisted is fine) and post about it on social media (e.g., LinkedIn, X)
+
+3. Submit a pull request to update your project file with the YouTube video ID (e.g., `IVaWl2tL06c` for `https://youtu.be/IVaWl2tL06c`) and a sentence with a link to the social media post. For example, for the YouTube video, you would replace the following two lines:
 
 ```markdown
 github: AC-BO-Hackathon/bayes-bandits
@@ -153,26 +155,28 @@ github: AC-BO-Hackathon/bayes-bandits
 youtube_video: IVaWl2tL06c
 ```
 
-If you don't want to post it to YouTube, you can also post it directly to LinkedIn or Twitter. In this case, please update the project description file to include a link to the post and create a new pull request. For example, if your description is:
+For the social media post, you would add a sentence like `Check out our social media post on [LinkedIn](<your link here>)!` before the References section. For example:
 
 ```markdown
 This project will investigate the application of bandit optimization to the design of composite materials. We will focus on the optimization of the mechanical properties of the composite materials, such as strength, stiffness, and toughness as a function of the fiber types and matrix materials. We will compare the performance of bandit optimization with the performance of Bayesian optimization using featurization tactics for this highly discrete space.
 
-- Aleksandrs Slivkins (2019), "Introduction to Multi-Armed Bandits", Foundations and Trends in Machine Learning: Vol. 12: No. 1-2, pp 1-286. http://dx.doi.org/10.1561/2200000068
-- Dimmery, D., Bakshy, E., & Sekhon, J. (2019). Shrinkage Estimators in Online Experiments. arXiv. https://doi.org/10.48550/ARXIV.1904.12918
+References:
+1. Aleksandrs Slivkins (2019), "Introduction to Multi-Armed Bandits", Foundations and Trends in Machine Learning: Vol. 12: No. 1-2, pp 1-286. http://dx.doi.org/10.1561/2200000068
+2. Dimmery, D., Bakshy, E., & Sekhon, J. (2019). Shrinkage Estimators in Online Experiments. arXiv. https://doi.org/10.48550/ARXIV.1904.12918
 ```
 
-You could add a link before the references (replace `<your_link_here>` with your actual link, without the angle brackets):
+would change to (replace `<your_link_here>` with your actual link, without the angle brackets):
 
 ```markdown
 This project will investigate the application of bandit optimization to the design of composite materials. We will focus on the optimization of the mechanical properties of the composite materials, such as strength, stiffness, and toughness as a function of the fiber types and matrix materials. We will compare the performance of bandit optimization with the performance of Bayesian optimization using featurization tactics for this highly discrete space.
 
-See also the [LinkedIn submission post](<your link here>).
+Check out our social media post on [LinkedIn](<your link here>)!
 
-- Aleksandrs Slivkins (2019), "Introduction to Multi-Armed Bandits", Foundations and Trends in Machine Learning: Vol. 12: No. 1-2, pp 1-286. http://dx.doi.org/10.1561/2200000068
-- Dimmery, D., Bakshy, E., & Sekhon, J. (2019). Shrinkage Estimators in Online Experiments. arXiv. https://doi.org/10.48550/ARXIV.1904.12918
+References:
+1. Aleksandrs Slivkins (2019), "Introduction to Multi-Armed Bandits", Foundations and Trends in Machine Learning: Vol. 12: No. 1-2, pp 1-286. http://dx.doi.org/10.1561/2200000068
+2. Dimmery, D., Bakshy, E., & Sekhon, J. (2019). Shrinkage Estimators in Online Experiments. arXiv. https://doi.org/10.48550/ARXIV.1904.12918
 ```
 
-This pull request will be considered your final submission. Again, if you find this process daunting, you are welcome to instead send your link by email to [sterling.baird@utoronto.ca](mailto:sterling.baird@utoronto.ca). Please include "AC BO Hackathon Final Submission" in the subject line. We will update the project file and create corresponding pull request for you.
+This pull request will be considered your final submission. Again, if you find this process daunting, you are welcome to instead send your link by email to [sterling.baird@utoronto.ca](mailto:sterling.baird@utoronto.ca). Please include "AC BO Hackathon Final Submission" in the subject line. We will update the project file and create corresponding pull request for you. If you don't want to post it to YouTube, you can also post the video directly to LinkedIn or Twitter. In this case, please remove the `youtube_video: ...` line and mention that the social media post contains the video.
 
 [faq]: {{ site.baseurl }}{% link faq.md %}

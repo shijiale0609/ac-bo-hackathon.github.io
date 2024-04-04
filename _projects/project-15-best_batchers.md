@@ -13,8 +13,9 @@ contributors:
   - Leon Schlosser (University of Münster, Germany), @le-schlo
   - Florian Boser (University of Münster, Germany), @FlorianBoser
  
-# github: https://github.com/janweinreich/best_batchers
-# youtube_video: https://www.youtube.com/watch?v=utnWbJsObF0
+
+github: janweinreich/best_batchers
+youtube_video: utnWbJsObF0
 
 ---
 
