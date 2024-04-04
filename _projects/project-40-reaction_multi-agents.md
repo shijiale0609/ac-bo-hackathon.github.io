@@ -12,7 +12,8 @@ contributors:
   - Yanqiao Zhu (UCLA)
 
 # github: AC-BO-Hackathon/project-reation_BO_agents
-# youtube_video: <your-video-id>
+# youtube_video: https://youtu.be/xf6rfyUQeZQ
+# Linkedin:https://www.linkedin.com/in/bozhao-nan/
 
 ---
 
