@@ -11,7 +11,7 @@ contributors:
   - Kehan Guo (University of Notre Dame)
   - Yanqiao Zhu (UCLA)
 
-github: AC-BO-Hackathon/project-reation_BO_agents
+github: AC-BO-Hackathon/project-reaction_BO_agents
 youtube_video: xf6rfyUQeZQ
 
 ---
