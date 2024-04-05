@@ -3,7 +3,7 @@ from validate_format import validate_file
 
 
 def test_project_files():
-    files = glob.glob("_projects/*.md")
+    files = sorted(glob.glob("_projects/*.md"))
     errors = []
     for file in files:
         try:
