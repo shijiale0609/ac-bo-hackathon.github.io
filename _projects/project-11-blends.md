@@ -3,8 +3,8 @@ number: 11 # leave as-is, maintainers will adjust
 title: BlendDS - An intuitive specification of the design space for blends of components
 topic: general
 team_leads:
-  - Daniele Ongari (SYENSQO)
-  - Alessio Tamburro (SYENSQO)
+  - Daniele Ongari (SYENSQO) @danieleongari
+  - Alessio Tamburro (SYENSQO) @alessiot
 
 github: danieleongari/blends
 youtube_video: HASa3tFLZoI
