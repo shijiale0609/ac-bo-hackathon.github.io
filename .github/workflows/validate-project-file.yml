@@ -46,7 +46,7 @@ jobs:
       run: |
         echo "${{ steps.files.outputs.result }}" | while read file; do
           if [[ "$file" == _projects/*.md ]]; then
-            python scripts/validate_format.py "$file"
+            python validate_format.py "$file"
             if [ $? -ne 0 ]; then
               echo "Validation failed for $file"
               exit 1
@@ -59,7 +59,7 @@ jobs:
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       run: |
         find _projects -name '*.md' | while read file; do
-          python scripts/validate_format.py "$file"
+          python validate_format.py "$file"
           if [ $? -ne 0 ]; then
             echo "Validation failed for $file"
             exit 1
