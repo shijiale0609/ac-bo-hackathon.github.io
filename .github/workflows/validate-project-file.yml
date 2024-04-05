@@ -13,9 +13,12 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
-    
+      with:
+        fetch-depth: 0  # Fetches all history for all branches and tags
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -24,15 +27,30 @@ jobs:
     - name: Install Python dependencies
       run: pip install requests pyyaml
 
+    - name: Get list of changed files for PR
+      if: github.event_name == 'pull_request'
+      id: files
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const payload = context.payload.pull_request
+          const result = await github.rest.pulls.listFiles({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: payload.number
+          });
+          return result.data.map(file => file.filename).join('\n');
+
     - name: Validate modified project files in PR
       if: github.event_name == 'pull_request'
       run: |
-        files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- '_projects/*.md')
-        for file in $files; do
-          python validate_format.py "$file"
-          if [ $? -ne 0 ]; then
-            echo "Validation failed for $file"
-            exit 1
+        echo "${{ steps.files.outputs.result }}" | while read file; do
+          if [[ "$file" == _projects/*.md ]]; then
+            python scripts/validate_format.py "$file"
+            if [ $? -ne 0 ]; then
+              echo "Validation failed for $file"
+              exit 1
+            fi
           fi
         done
       shell: bash
@@ -40,9 +58,8 @@ jobs:
     - name: Validate all project files in main
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       run: |
-        files=$(find _projects -name '*.md')
-        for file in $files; do
-          python validate_format.py "$file"
+        find _projects -name '*.md' | while read file; do
+          python scripts/validate_format.py "$file"
           if [ $? -ne 0 ]; then
             echo "Validation failed for $file"
             exit 1
