@@ -1,0 +1,13 @@
+name: ac-bo-hackathon
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.6,<3.12
+  - pip
+  - ipython
+  - pyyaml
+  - requests
+  # - pip:
+  #    - -e .  # install git checkout in editable mode
+  - pytest
