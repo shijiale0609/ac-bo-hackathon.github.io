@@ -14,7 +14,7 @@ contributors:
   - Martin Fitzner (Merck KGaA / EMD group, @Scienfitz)
   - Alexander Hopp (Merck KGaA / EMD group, @AVHopp)
 
-# github: AC-BO-Hackathon/<your-repo-name>
+github: AC-BO-Hackathon/project-23-multiple-context-bo
 # youtube_video: <your-video-id>
 
 ---
@@ -27,4 +27,4 @@ In this project, we aim to investigate _(i)_ the multiple-context performance of
 
 References:
   - [https://github.com/emdgroup/baybe](https://github.com/emdgroup/baybe)
-
+  - [Transfer Learning in BayBE](https://emdgroup.github.io/baybe/userguide/transfer_learning.html)
