@@ -14,6 +14,7 @@ contributors:
 github: AC-BO-Hackathon/real-world-pme-no-hikari
 youtube_video: l0aVZDMwIMU
 
+
 ---
 
 Metal-organic frameworks are nanoporous materials that shows great promise for carbon capture at large scale. In this work, we adopt the CRAFTED MOF dataset and build Bayesian optimization model with Thompson sampling acquisition function to perform candidate selection for MOfs with high CO2 uptake. We benchmark Thompson sampling against random sampling method to compare their performance in finding high-performers.
