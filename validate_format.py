@@ -55,12 +55,14 @@ def validate_file(file_path):
     with open(file_path, "r") as file:
         parts = file.read().split("---")
         if len(parts) < 3:
+            print("Invalid file structure. Could not find YAML front matter.")
             errors.append("Invalid file structure. Could not find YAML front matter.")
         yaml_content, text_content = parts[1], parts[2]
 
     try:
         content = yaml.load(yaml_content, Loader=yaml.FullLoader)
     except yaml.YAMLError as exc:
+        print(f"Error in YAML parsing: {exc}")
         errors.append(f"Error in YAML parsing: {exc}")
 
     required_fields = [
@@ -73,6 +75,7 @@ def validate_file(file_path):
     ]
     for field in required_fields:
         if field not in content:
+            print(f"Missing required field: {field}")
             errors.append(f"Missing required field: {field}")
 
     if "team_leads" in content:
