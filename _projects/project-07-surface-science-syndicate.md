@@ -8,7 +8,7 @@ team_leads:
 
 contributors:
   - Alexander Wieczorek (Empa / ETH Zürich) @Alex6022
-  - Michail Mitsakis (DTU) @lordmikerahl
+  - Michail Mitsakis (Technical University of Denmark (DTU)) @lordmikerahl
   
 github: AC-BO-Hackathon/project-surface-science-syndicate
 <!-- youtube_video: <your-video-id> -->
