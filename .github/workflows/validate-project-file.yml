@@ -1,9 +1,9 @@
 name: Validate Project File Format
 
 on:
-  pull_request:
-    paths:
-      - '_projects/*.md'
+  # pull_request:
+  #  paths:
+  #    - '_projects/*.md'
   push:
     branches:
       - main
