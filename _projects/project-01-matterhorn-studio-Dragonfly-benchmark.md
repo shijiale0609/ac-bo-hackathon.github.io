@@ -1,6 +1,7 @@
 ---
 number: 1 # leave as-is, maintainers will adjust
 title: Multi-objective Benchmarking of Dragonfly against BoTorch
+topic: general
 team_leads:
   - Jakob Zeitler (<a href=http://matterhorn.studio/>Matterhorn Studio</a>)
 
