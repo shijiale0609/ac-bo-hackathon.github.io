@@ -7,10 +7,7 @@ class ValidationError(Exception):
     """Exception raised for errors in the validation process."""
 
     def __init__(self, file_path, errors):
-        message = (
-            f"Multiple validation errors occurred in {file_path}:\n==============\n"
-            + "\n".join(errors)
-        )
+        message = f"In {file_path}:\n==============\n" + "\n".join(errors)
         super().__init__(message)
 
 
