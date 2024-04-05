@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - '_projects/*.md'
+      - '.github/workflows/validate-project-file.yml'
 
 jobs:
   validate:
