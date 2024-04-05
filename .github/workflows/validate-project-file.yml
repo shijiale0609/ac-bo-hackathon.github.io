@@ -1,0 +1,51 @@
+name: Validate Project File Format
+
+on:
+  pull_request:
+    paths:
+      - '_projects/*.md'
+  push:
+    branches:
+      - main
+    paths:
+      - '_projects/*.md'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Python dependencies
+      run: pip install requests pyyaml
+
+    - name: Validate modified project files in PR
+      if: github.event_name == 'pull_request'
+      run: |
+        files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- '_projects/*.md')
+        for file in $files; do
+          python validate_format.py "$file"
+          if [ $? -ne 0 ]; then
+            echo "Validation failed for $file"
+            exit 1
+          fi
+        done
+      shell: bash
+
+    - name: Validate all project files in main
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        files=$(find _projects -name '*.md')
+        for file in $files; do
+          python validate_format.py "$file"
+          if [ $? -ne 0 ]; then
+            echo "Validation failed for $file"
+            exit 1
+          fi
+        done
+      shell: bash
