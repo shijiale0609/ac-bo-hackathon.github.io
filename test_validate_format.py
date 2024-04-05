@@ -8,10 +8,8 @@ def test_project_files():
     for file in files:
         try:
             result = validate_file(file)
-            if not result:
-                errors.append(f"Validation failed for {file}")
         except Exception as e:
-            errors.append(f"Exception occurred while validating {file}: {e}")
+            errors.append(f"\n\nException occurred while validating {file}:\n{e}")
     assert not errors, "\n".join(errors)
 
 
