@@ -7,9 +7,9 @@ def test_project_files():
     errors = []
     for file in files:
         try:
-            result = validate_file(file)
+            validate_file(file)
         except Exception as e:
-            pass
+            errors.append(e)
     assert not errors, "\n".join(errors)
 
 
