@@ -101,8 +101,4 @@ def validate_file(file_path):
 if __name__ == "__main__":
     import sys
 
-    try:
-        validate_file(sys.argv[1])
-    except ValidationError as e:
-        print(f"Validation failed: {e}")
-        sys.exit(1)
+    validate_file(sys.argv[1])
