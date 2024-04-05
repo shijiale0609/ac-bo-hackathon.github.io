@@ -8,11 +8,13 @@ on:
       - '_projects/*.md'
       - '.github/workflows/validate-project-file.yml'
       - 'test_validate_format.py'
+      - 'validate_format.py'
   pull_request:
     paths:
       - '_projects/*.md'
       - '.github/workflows/validate-project-file.yml'
       - 'test_validate_format.py'
+      - 'validate_format.py'
 
 jobs:
   validate:
