@@ -1,15 +1,18 @@
 name: Validate Project File Format
 
 on:
-  # pull_request:
-  #  paths:
-  #    - '_projects/*.md'
   push:
     branches:
       - main
     paths:
       - '_projects/*.md'
       - '.github/workflows/validate-project-file.yml'
+      - 'test_validate_format.py'
+  pull_request:
+    paths:
+      - '_projects/*.md'
+      - '.github/workflows/validate-project-file.yml'
+      - 'test_validate_format.py'
 
 jobs:
   validate:
@@ -26,7 +29,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install Python dependencies
-      run: pip install requests pyyaml
+      run: pip install requests pyyaml pytest
 
     - name: Get list of changed files for PR
       if: github.event_name == 'pull_request'
@@ -47,8 +50,7 @@ jobs:
       run: |
         echo "${{ steps.files.outputs.result }}" | while read file; do
           if [[ "$file" == _projects/*.md ]]; then
-            python validate_format.py "$file"
-            if [ $? -ne 0 ]; then
+            if ! python validate_format.py "$file"; then
               echo "Validation failed for $file"
               exit 1
             fi
@@ -60,8 +62,7 @@ jobs:
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       run: |
         find _projects -name '*.md' | while read file; do
-          python validate_format.py "$file"
-          if [ $? -ne 0 ]; then
+          if ! python validate_format.py "$file"; then
             echo "Validation failed for $file"
             exit 1
           fi
