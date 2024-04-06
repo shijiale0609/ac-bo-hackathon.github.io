@@ -14,7 +14,7 @@ team_leads:
 # github: AC-BO-Hackathon/<your-repo-name>
 
 ---
-The default distance function used in the kernel functions of Gaussian Processes is the Euclidean distance. The configuration of these kernels significantly influences the model's performance. In this work, we developed chemical similarity-informed kernels for Bayesian Optimization to predict the yields of reactants. Additionally, we will compare how different chemical similarity functions can affect the performance of Bayesian Optimization.
+The default distance function used in the kernel functions of Gaussian Processes is the Euclidean distance. The configuration of these kernels significantly influences the model's performance. In this work, we develop chemical similarity-informed kernels for Bayesian Optimization to predict the yields of reactants. Additionally, we compare how different chemical similarity functions can affect the performance of Bayesian Optimization.
 
 Reference:
 
