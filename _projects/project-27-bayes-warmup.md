@@ -14,6 +14,7 @@ team_leads:
 
 github: eltonpan/bayes-warmup
 youtube_video: 4gPTMaarQt0
+X post: https://twitter.com/pengfeicsci/status/1776721505361248278
 
 ---
 
