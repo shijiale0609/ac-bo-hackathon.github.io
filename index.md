@@ -79,7 +79,7 @@ With the completion of a 2-day virtual hackathon hosted by scientists from the A
 
 During the hackathon, researchers had the opportunity to select or develop Bayesian optimization algorithms and apply them to benchmarking tasks, design new benchmark tasks, create instructional tutorials, describe real-world applications, and more. The results of this collaborative effort will be collated and presented in a scholarly article[<sup>(?)</sup>][faq]{:title="What is required for me to participate in the scholarly article?"}.
 
-Although the event has concluded, the outputs from the hackathon, including applied and developed algorithms, benchmarks, and tutorials, will continue to serve as valuable resources for the research community. Outputs from teams that have opted to release their projects are available at https://github.com/AC-BO-Hackathon. We believe that through this event, new connections have been formed, new skills have been acquired, and new ideas have been inspired.
+Although the event has concluded, the outputs from the hackathon, including applied and developed algorithms, benchmarks, and tutorials, will continue to serve as valuable resources for the research community. Outputs from teams that have opted to release their projects are available at [https://github.com/AC-BO-Hackathon](https://github.com/AC-BO-Hackathon) or through their own accounts (see individual project pages for links). We believe that through this event, new connections have been formed, new skills have been acquired, and new ideas have been inspired.
 
 We want to express our gratitude to all the participants for their contributions, and we look forward to future collaborations in advancing Bayesian optimization in chemistry and materials science.
 {% endif %}
@@ -88,7 +88,7 @@ We want to express our gratitude to all the participants for their contributions
 
 {% if event_status != "over" %}
 
-Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be announced the day after the hackathon for the highest-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects (see project showcase and judging session on Day 2 of [agenda](_/../agenda.md)). Tentative prize tiers are below, and submissions from any project topic are eligible. Each prize will be awarded in the form of a gift card.
+Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be announced the day after the hackathon for the highest-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects based on the project showcase and judging session on Day 2 of [agenda](_/../agenda.md). Tentative prize tiers are below, and submissions from any project topic are eligible. Each prize will be awarded in the form of a gift card.
 
 | Rank | Prize |
 | --- | --- |
@@ -98,20 +98,20 @@ Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be anno
 | 4th-10th ranked | Up to CA$30 gift card per team member (max CA$100) |
 
 {% else %}
-We'd like to congratulate the following teams for their outstanding contributions to the hackathon! The top-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects are as follows:
+We'd like to congratulate the following teams for their outstanding contributions to the hackathon! The top-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects from the showcase and judging session are as follows:
 
-| Rank | Project | Team | Prize |
-|------|---------|------|-------|
-| 1st | | | |
-| 2nd | | | |
-| 3rd | | | |
-| 4th | | | |
-| 5th | | | |
-| 6th | | | |
-| 7th | | | |
-| 8th | | | |
-| 9th | | | |
-| 10th | | | |
+| Rank | Project # | Team Name | Project Name |
+| --- | --- | --- | --- |
+1st | [Project 23](https://ac-bo-hackathon.github.io/projects/project-23-noisy-nerds/) | Noisy Nerds | Reliable Surrogate Models of Noisy Data |
+2nd | [Project 34](https://ac-bo-hackathon.github.io/projects/project-34-boms-probs/) | BOMS Prob | Streamlining Material Discovery - Bayesian Optimization in Thermal Fluid Mixtures |
+3rd | [Project 7](https://ac-bo-hackathon.github.io/projects/project-07-surface-science-syndicate/) | Surface Science Syndicate | BayBE One More Time - Exploring Corrosion Inhibitors for Materials Design |
+4th | [Project 5](https://ac-bo-hackathon.github.io/projects/project-05-klm/) | KLM | Comparing Bayesian Optimization Methods Across Multiple Hyperparameters Against Simulated "Human" Decision-making |
+5th | [Project 8](https://ac-bo-hackathon.github.io/projects/project-08-molecular-representation/) | Molecular Representation | BO for Drug Discovery-What is the role of molecular representation? |
+6th | [Project 9](https://ac-bo-hackathon.github.io/projects/project-09-pme-no-hikari/) | PME No Hikari | Optimizing The CO2 Adsorption Capacity of Metal-Organic Frameworks Using Thompson Sampling |
+7th | [Project 11](https://ac-bo-hackathon.github.io/projects/project-11-blends/) | BlenDS | BlendDS - An intuitive specification of the design space for blends of components |
+8th | [Project 30](https://ac-bo-hackathon.github.io/projects/project-30-sero-opt/) | SERO Opt | Active learning for voltammetry waveform design |
+9th | [Project 43](https://ac-bo-hackathon.github.io/projects/project-43-general-optimizers/) | Awesome List | Bayesian Optimization Awesome List |
+10th | [Project 3](https://ac-bo-hackathon.github.io/projects/project-03-sparks-group/) | Sparks Group | Take Your Time - Measuring Optimization Performance as a Function of ACQF Optimizer Runtime |
 
 For a full list of hackathon projects, we encourage you to check out the [projects page](_/../projects.md).
 

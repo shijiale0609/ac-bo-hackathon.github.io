@@ -1,0 +1,75 @@
+name: Validate Project File Format
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_projects/*.md'
+      - '.github/workflows/validate-project-file.yml'
+      - 'test_validate_format.py'
+      - 'validate_format.py'
+  # pull_request:
+  #   paths:
+  #     - '_projects/*.md'
+  #     - '.github/workflows/validate-project-file.yml'
+  #     - 'test_validate_format.py'
+  #     - 'validate_format.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # Fetches all history for all branches and tags
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Python dependencies
+      run: pip install requests pyyaml pytest
+
+    - name: Get list of changed files for PR
+      if: github.event_name == 'pull_request'
+      id: files
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const payload = context.payload.pull_request
+          const result = await github.rest.pulls.listFiles({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: payload.number
+          });
+          return result.data.map(file => file.filename).join('\n');
+
+    - name: Validate modified project files in PR
+      if: github.event_name == 'pull_request'
+      run: |
+        echo "${{ steps.files.outputs.result }}" | while read file; do
+          if [[ "$file" == _projects/*.md ]]; then
+            output=$(python validate_format.py "$file" 2>&1) || {
+              echo "Validation failed for $file with message: $output"
+              exit 1
+            }
+            echo "$output"
+          fi
+        done
+      shell: bash
+
+    - name: Validate all project files in main
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        pytest test_validate_format.py
+        # find _projects -name '*.md' | while read file; do
+        #   output=$(python validate_format.py "$file" 2>&1) || {
+        #     echo "Validation failed for $file with message: $output"
+        #     exit 1
+        #   }
+        #   echo "$output"
+        # done
+      shell: bash

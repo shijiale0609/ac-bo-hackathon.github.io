@@ -3,22 +3,24 @@ number: 8 # leave as-is, maintainers will adjust
 title: BO for Drug Discovery-What is the role of molecular representation?
 topic: general
 team_leads:
-  - Fanjin Wang (University College London)
+  - Fanjin Wang (University College London) @FrankWanger
 
 # Comment these lines to hide these elements
 contributors:
-  - Quinn Gallagher (Princeton University)
-  - Ankur Gupta (Lawrence Berkeley National Laboratory)
-  - Christina Schenk (IMDEA Materials Institute)
+  - Quinn Gallagher (Princeton University) @QGallagher
+  - Ankur Gupta (Lawrence Berkeley National Laboratory) @ankur56
+  - Christina Schenk (IMDEA Materials Institute) @schenkch
 
 github: frankwanger/ACBO-Feat
-# youtube_video: <your-video-id>
+youtube_video: 5f_UwsfYrc8
 
 ---
 
 Current applications of BO in materials research relied on basic molecular representations such as simple composition of elements. However, in drug discovery and more complicated materials discovery, a myriad of molecular featurizations (or fingerprints) has been proposed for the representation of molecules. The majority of publications [1,2] followed the convention of using extended-connectivity fingerprint (ECFP). However, the impact of these representations on BO performance was still largely under explored.
 
 The present project aims to investigate how different molecular representations can interfere with the performance on BO using a published quantitative-structure property relationship (QSPR) dataset.
+
+Check out our social media post on [LinkedIn](https://www.linkedin.com/posts/fanjinwang_what-is-the-role-of-molecular-featurization-activity-7179513312722726913-oFNk)!
 
 References:
 
