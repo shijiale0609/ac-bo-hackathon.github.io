@@ -1,6 +1,6 @@
 ---
 number: 22 # leave as-is, maintainers will adjust
-title: Chemical Similarity-Informed Custom Kernel Bayesian Optimization for Predicting the Properties of Molecules and Molecular Mixtures
+title: Chemical Similarity-Informed Kernel Bayesian Optimization for Predicting Reaction Yields
 team_leads:
   - Jiale Shi (Massachusetts Institute of Technology)
   - Dandan Tang (University of Virginia)
@@ -14,7 +14,7 @@ team_leads:
 # github: AC-BO-Hackathon/<your-repo-name>
 
 ---
-The default distance function used in the kernel functions of Gaussian Processes is the Euclidean distance. The configuration of these kernels significantly influences the model's performance. In this work, we will develop a series of chemical similarity-informed custom kernels for Bayesian Optimization to predict the properties of molecules. Additionally, we will compare how different chemical similarity functions can affect the performance of Bayesian Optimization. Beyond pure components, we will employ the earth mover's distance to define the pairwise distance of mixtures from the pairwise distance of individual components, thereby extending this method to predict the properties of chemical mixtures.
+The default distance function used in the kernel functions of Gaussian Processes is the Euclidean distance. The configuration of these kernels significantly influences the model's performance. In this work, we developed chemical similarity-informed kernels for Bayesian Optimization to predict the yields of reactants. Additionally, we will compare how different chemical similarity functions can affect the performance of Bayesian Optimization.
 
 Reference:
 
