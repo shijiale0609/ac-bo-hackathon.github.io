@@ -14,11 +14,12 @@ team_leads:
 
 github: eltonpan/bayes-warmup
 youtube_video: 4gPTMaarQt0
-X post: https://twitter.com/pengfeicsci/status/1776721505361248278
 
 ---
 
 Real-world experiments in chemistry and materials science often involve very small initial datasets (10-100 data points). In this project, we propose to investigate how the 1) size and 2) distribution of the initial dataset influence the performance of bayesian optimization algorithms. We propose experiments on molecular property optimization tasks.
+
+Check out our [submission post on X](https://twitter.com/pengfeicsci/status/1776721505361248278)!
 
 References:
 - L. Ruddigkeit, R. van Deursen, L. C. Blum, J.-L. Reymond, Enumeration of 166 billion organic small molecules in the chemical universe database GDB-17, J. Chem. Inf. Model. 52, 2864–2875, 2012.
