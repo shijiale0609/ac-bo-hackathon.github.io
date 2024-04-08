@@ -12,6 +12,7 @@ contributors:
 
 github: gkwt/rank-bo
 youtube_video: c84Sd2IwMAQ
+x_post: https://x.com/mistergtom/status/1777195867730038819
 
 ---
 
