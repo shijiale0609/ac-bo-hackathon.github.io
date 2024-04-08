@@ -3,16 +3,16 @@ number: 26 # leave as-is, maintainers will adjust
 title: Multiple-Context Bayesian Optimization
 topic: general
 team_leads:
-  - Joscha Hoche (Merck KGaA / EMD group, @hochej)
-  - Viola Muning Li (Merck KGaA / EMD group, @vola-m-li)
-  - Marcel Mueller (Merck KGaA / EMD group and University of Bonn, @marcelmbn and @marcelmuellergdi)
-  - Rim Rihana (Merck KGaA / EMD group, @RimRihana)
-  - Tobias Ploetz (Merck KGaA / EMD group, @tobiasploetz)
+  - Joscha Hoche (Merck KGaA / EMD group) @hochej
+  - Viola Muning Li (Merck KGaA / EMD group) @vola-m-li
+  - Marcel Mueller (Merck KGaA / EMD group and University of Bonn) @marcelmbn, @marcelmuellergdi
+  - Rim Rihana (Merck KGaA / EMD group) @RimRihana
+  - Tobias Ploetz (Merck KGaA / EMD group) @tobiasploetz
 
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 contributors:
-  - Martin Fitzner (Merck KGaA / EMD group, @Scienfitz)
-  - Alexander Hopp (Merck KGaA / EMD group, @AVHopp)
+  - Martin Fitzner (Merck KGaA / EMD group) @Scienfitz
+  - Alexander Hopp (Merck KGaA / EMD group) @AVHopp
 
 github: AC-BO-Hackathon/project-26-multiple-context-bo
 # youtube_video: <your-video-id>
