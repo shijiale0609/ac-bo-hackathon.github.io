@@ -15,7 +15,7 @@ contributors:
   - Alexander Hopp (Merck KGaA / EMD group) @AVHopp
 
 github: AC-BO-Hackathon/project-26-multiple-context-bo
-# youtube_video: <your-video-id>
+youtube_video: [AC BO Hackathon: Project 26 – Multiple-Context Bayesian Optimization](https://youtu.be/wK266A0TvZ4)
 
 ---
 
