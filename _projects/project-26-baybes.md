@@ -15,7 +15,7 @@ contributors:
   - Alexander Hopp (Merck KGaA / EMD group) @AVHopp
 
 github: AC-BO-Hackathon/project-26-multiple-context-bo
-youtube_video: [AC BO Hackathon: Project 26 – Multiple-Context Bayesian Optimization](https://youtu.be/wK266A0TvZ4)
+youtube_video: wK266A0TvZ4
 
 ---
 
@@ -25,7 +25,7 @@ In multi-context BO (which could also be referred to as transfer learning), the 
 
 In this project, we aim to investigate _(i)_ the multiple-context performance of BO frameworks on existing benchmarks, _(ii)_ develop new benchmarks for such tasks based on existing data, and _(iii)_ possibly also investigate different ways of incorporating prior knowledge into the model.
 
-Check our submission post [here on X](https://x.com/Scienfitz/status/1777346768105058318) and [here on LinkedIn](https://www.linkedin.com/posts/martinfitzner_i-hope-you-enjoyed-the-bo-hackathon-a-week-activity-7183091952010022914-lHEn).
+Check our submission post [here on X](https://x.com/Scienfitz/status/1777346768105058318) and [here on LinkedIn](https://www.linkedin.com/posts/martinfitzner_i-hope-you-enjoyed-the-bo-hackathon-a-week-activity-7183091952010022914-lHEn)!
 
 References:
   - [https://github.com/emdgroup/baybe](https://github.com/emdgroup/baybe)
